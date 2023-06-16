@@ -1,0 +1,33 @@
+@media (max-width: 1024px){
+        /* cart item */
+        .no-padding-x{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        .cart-pay-list{
+            padding: 0 ;
+        }
+        .cart-mg-b-20{
+            margin-bottom: 20px;
+        }
+        /* cart item */
+        .inputs-cart{
+            display: block !important;
+        }
+
+        .btns-cart{
+            width: 100% !important;
+            padding: 12px !important;
+            border-radius: 6px !important;
+            margin-top: 10px !important;
+        }
+        .cart-pay-form .form-controls{
+            border-radius: 6px;
+        }
+        /*
+            width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px; 
+         */
+}

@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.form{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgb(244, 235, 201);
+    border-radius: 6px;
+    padding: 20px;
+}
+.form-check a{
+    text-decoration: none;
+    color: #000;
+}
+.form-check a:hover{
+    color: blue;
+}

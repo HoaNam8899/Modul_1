@@ -1,0 +1,270 @@
+/* css for reponsive */
+.header-top-lg-icon{
+    text-decoration: none;
+    display: none;
+}
+.header-top-lg-icon i{
+    font-size: 30px;
+    margin-right: 8px;
+    color: #000;
+
+}
+.header-top-icon a:first-child{
+    display: none;
+}
+
+.filter-md{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+    display: none;
+}
+.filter-md > span{
+    padding: 10px 12px;
+    background-color: #057b64;
+    border-radius: 6px;
+}
+/* css for reponsive */
+/* (min-width: 992px) and  */
+/* dung max-width */
+@media (max-width: 1024px){
+
+
+    /* cart item đem qua responsiveCart thì bị lỗi ????*/
+    /* .no-padding-x{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .cart-pay-list{
+        padding: 0 ;
+    }
+    .cart-mg-b-20{
+        margin-bottom: 20px;
+    } */
+    /* cart item */
+
+
+
+
+
+    /*  */
+    .container{
+        padding: 0 54px;
+    }
+    .alignn-center{
+        align-items: center;
+    }
+    .margin-r-am{
+        margin: 0 0 0 -34px;
+    }
+    .width-50{
+        width: 50%;
+    }
+    .mg-bot-20{
+        margin-bottom: 30px;
+    }
+    .pd-left-30{
+        padding-left: 30px;
+    }
+    /* .align-self-cent{
+        align-self: center;
+    } */
+    /*  */
+    .direction{
+        display: none !important;
+    }
+    .flex-item-1{
+        flex: 1;
+    }
+    .header-top-lg-icon{
+        display: block;
+    }
+    .location{
+        width: 50px;
+        height: 50px;
+    }
+    .location h3, .location > i{
+        display: none;
+    }
+    .inputs{
+        display: none !important;
+    }
+    .header-top-icon a:first-child{
+        display: block;
+    }
+    /* nav ul */
+    .navbar-ul,
+    .deal-today span{
+        display: none;
+    }
+    .deal-today{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .sort-r i:last-child{
+        display: none;
+    }
+    .footer-top-content{
+        margin-bottom: 10px;
+    }
+    .footer-top-content:nth-child(2) span::after{
+        content: "";
+        display: none;
+    }
+    .footer-top-content:nth-child(3) span::after{
+        right: -170px;
+    }
+    .footer-top-content:nth-child(1) span::after{
+        right: -172px;
+    }
+    .active{
+        font-size: 19px !important;
+    }
+
+}
+@media  (max-width: 768px){
+    /*  */
+    .container{
+       padding: 0 40px;
+    }
+    .filter-md{
+        display: block;
+    }
+    .flex-di-column{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .pd-left-30{
+        padding-left: 0;
+    }
+    .pd-left-30-768{
+        padding-left: 30px;
+    }
+    /*  */
+    
+    .introduce{
+        display: none;
+    }
+    .location{
+        margin-left: -4px;;
+    }
+    .shop-category{
+        padding: 30px 0;
+    }
+    .list-group{
+        display: none;
+    }
+    .footer-top-content{
+        margin-bottom: 20px;
+    }
+    .footer-top-content:nth-child(3) span::after{
+        right: -83px;
+    }
+    .footer-top-content:nth-child(1) span::after{
+        right: -84px;
+    }
+}
+@media (max-width: 600px) {
+    /*  */
+    .container{
+        padding: 0 16px;
+    }
+    .pd-left-30{
+        padding-left: 0 !important;
+    }
+    .pd-left-30-768{
+        padding-left: 0;
+    }
+    /*  */
+    .header-top{
+        padding-bottom: 12px;
+    }
+    .header-top .logo img{
+      width: 128px;
+      height: 22px;
+    }
+    .shop-category span{
+        font-size: 18px;
+    }
+    .shop-category-child{
+        align-items: flex-start !important;
+    }
+    .shop-category-child i:nth-child(1),
+    .shop-category-child i:nth-child(2){
+        font-size: 16px;
+    }
+    .shop-category-child span{
+        font-size: 13px;
+    }
+    .location{
+        display: none !important;
+    }
+    .header-top-icon a:nth-child(1),
+    .header-top-icon a:nth-child(2),
+    .header-top-icon a:nth-child(3),
+    .header-top-icon a:nth-child(4){
+        display: none;
+    }
+    .logo-sm{
+        gap: 154px;
+    }
+    .header-bottom{
+        display: none;
+    }
+    .shop-category{
+        margin-top: 0;
+    }
+    .filter-md{
+        font-size: 14px;
+    }
+    .filter-md span{
+        padding: 8px 10px 8px 6px;
+    }
+    .sort-r{
+        display: none !important;
+    }
+
+    .footer-top{
+        display: none;
+    }
+    .footer-body-content img{
+        width: 127px;
+        height: 22px;
+    }
+    .footer-body-content > p{
+        font-size: 14px;
+    }
+    .footer-body-content h2{
+        font-size: 17px;
+    }
+    .footer-body-ul li a{
+        font-size: 14px;
+    }
+    .footer-body-ul li{
+        line-height: 2.2;
+    }
+}
+@media (max-width: 575px){
+    /*  */
+    .pd-left-30-sm{
+        padding-left: 0;
+    }
+    .text-align-cen{
+        text-align: center;
+    }
+    .justy-center{
+        justify-content: center !important;
+    }
+    .gap-col{
+        gap: 10px;
+    }
+    .font-col{
+        font-size: 16px !important;
+        font-weight: bold !important;
+    }
+    /*  */
+    .logo-sm{
+        gap: 70px;
+    }
+}

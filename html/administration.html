@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="../css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/administration.css">
+</head>
+                <!--ảnh 
+                    tên sản phẩm
+                    mô tả
+                    //sao => dựa vào vote//
+                    vote
+                    khối lượng
+                    giá tiền 
+                    giảm giá 
+                    //giá tiền giảm giá sẽ dc tính sau//
+                -->
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="row">
+                <h2>Form for administrator</h2>
+                <div class="col-xl-3">
+                    <button type="button" class="btn btn-primary btn-home">Home</button>
+                    <button type="button" class="btn btn-primary btn-logout">Logout</button>
+                </div>
+                <div class="col-xl-9">
+                    <form>
+                        <div class="mb-1 d-flex justify-content-between align-items-center">
+                            <label for="id-product" class="form-label">Id</label>
+                            <input type="text" class="form-control" id="id-product" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-1 d-flex justify-content-between align-items-center">
+                          <label for="img-product" class="form-label">Image</label>
+                          <input type="file" class="form-control" id="img-product" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-1 d-flex justify-content-between align-items-center">
+                            <label for="name-product" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name-product" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-1 d-flex justify-content-between align-items-center">
+                            <label for="descript-product" class="form-label">Descript</label>
+                            <input type="text" class="form-control" id="descript-product" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-1 d-flex justify-content-between align-items-center">
+                            <label for="vote-product" class="form-label">Vote</label>
+                            <input type="text" class="form-control" id="vote-product" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-1 d-flex justify-content-between align-items-center">
+                            <label for="weight-product" class="form-label">Weight</label>
+                            <input type="text" class="form-control" id="weight-product" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-1 d-flex justify-content-between align-items-center">
+                            <label for="price-product" class="form-label">Price ($)</label>
+                            <input type="number" class="form-control" id="price-product" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-1 d-flex justify-content-between align-items-center">
+                            <label for="discount-product" class="form-label">Discount (%)</label>
+                            <input type="number" class="form-control" id="discount-product" aria-describedby="emailHelp">
+                        </div>
+
+                        <button type="button" class="btn btn-primary btn-add">Add</button>
+                        <button type="button" class="btn btn-primary btn-save">Save</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <table class="table" style="text-align: center;">
+                        <thead>
+                          <tr>
+                            <th scope="col" style="width: 10%;">Id</th>
+                            <th scope="col" style="width: 10%;">Image</th>
+                            <th scope="col" style="width: 10%;">Name</th>
+                            <th scope="col" style="width: 20%;">Description</th>
+                            <th scope="col" style="width: 10%;">Vote</th>
+                            <th scope="col" style="width: 10%;">Weight</th>
+                            <th scope="col" style="width: 10%;">Price</th>
+                            <th scope="col" style="width: 10%;">Discount</th>
+                            <th scope="col" style="width: 10%;">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody id="list-product">
+                          <tr>
+                            <td>Mark</td>
+                            <td>
+                                <img src="../img/4.png" alt="">
+                            </td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>
+                                <button type="button" class="btn btn-success mb-1">Adjust</button>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../javascript/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="../javascript/admin.js"></script>
+</body>
+</html>
