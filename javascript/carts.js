@@ -43,7 +43,7 @@ function addInfoToCart(){
         
     }
     $('.cart-pay-list').html(rows);
-    console.log(a);
+    // console.log(a);
     // tổng tiền
     $('#all-total-pay').html(new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(a));
     

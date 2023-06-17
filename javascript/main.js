@@ -39,7 +39,7 @@ $(document).ready( function () {
 
 function addCardToMain() {
     let products = JSON.parse(localStorage.getItem('products')) || [];
-    console.log(products);
+    // console.log(products);
     let rows = '';
     // img: img,
     // id: id,
