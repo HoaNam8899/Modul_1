@@ -50,6 +50,7 @@ function addCardToMain() {
     // price: price,
     // discount: discount
     for( let item of products) {
+        // xử lí vote
         let cardVote = '';
         if (item.vote <= 0){
             cardVote = `

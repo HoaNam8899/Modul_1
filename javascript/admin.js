@@ -18,7 +18,7 @@ $(document).ready( function () {
         let weight = $('#weight-product').val();
         let price= $('#price-product').val();
         let discount = $('#discount-product').val();
-
+        // kiểm tra id
         let check = checkId(products, id);
         if (check) {
             alert('bị trùng Id');
@@ -122,7 +122,6 @@ function adjustProduct(pId){
 }
 function deleteProduct(pId) {
     let products = JSON.parse(localStorage.getItem('products'));
-
     if(confirm('bạn có muốn xóa')){
         let a = products.findIndex( x => x.id == pId);
         products.splice(a, 1);
