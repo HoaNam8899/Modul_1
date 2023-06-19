@@ -54,48 +54,48 @@ function addCardToMain() {
         let cardVote = '';
         if (item.vote <= 0){
             cardVote = `
-                <i class='bx bx-star' ></i>
-                <i class='bx bx-star' ></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 `;
         } else if( item.vote == 1) {
             cardVote = `
-                <i class='bx bxs-star' ></i>
-                <i class='bx bx-star' ></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 `;
         } else if( item.vote == 2) {
             cardVote = `
-                <i class='bx bxs-star' ></i>
-                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
                 <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 `;
         } else if( item.vote == 3) {
             cardVote = `
-                <i class='bx bxs-star' ></i>
-                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
                 <i class='bx bxs-star'></i>
                 <i class='bx bx-star'></i>
                 <i class='bx bx-star'></i>
                 `;
         } else if( item.vote == 4) {
             cardVote = `
-                <i class='bx bxs-star' ></i>
-                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
                 <i class='bx bxs-star'></i>
                 <i class='bx bxs-star'></i>
                 <i class='bx bx-star'></i>
                 `;
         } else {
             cardVote = `
-                <i class='bx bxs-star' ></i>
-                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
                 <i class='bx bxs-star'></i>
                 <i class='bx bxs-star'></i>
                 <i class='bx bxs-star'></i>
@@ -162,6 +162,7 @@ function addCardToCartlist() {
     let carts = JSON.parse(localStorage.getItem('carts')) || [];
     let rows = '';
     let a = 0;
+    let b = 0;
     for( let item of carts){
         rows += `
             <div class="cart-list-product d-flex align-items-center justify-content-between">
@@ -179,9 +180,14 @@ function addCardToCartlist() {
             </div>
         `;
         a += Alltotal(item.price, item.discount, item.quantity);
+        b++;
     }
+    // thêm vào danh sách sản phẩm mini
     $('.cart-list-item').html(rows);
+    // format lại giá tiền 
     $('.cart-list-price-total').html(new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(a));
+    // số lượng sản phẩm trên icon giỏ hàng
+    $('.quantity-of-product').html(b);
 }
 addCardToCartlist();
 
