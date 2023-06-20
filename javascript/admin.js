@@ -80,6 +80,7 @@ function checkId(arr, ids){
 function inserInfo() {
     let rows = '';
     let products = JSON.parse(localStorage.getItem('products'));
+    products = products.sort((p1, p2) => parseInt(p1.price) - parseInt(p2.price));
     for( let item of products) {
         rows += `
             <tr>
